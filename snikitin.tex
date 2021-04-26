@@ -5,9 +5,9 @@
 % Feel free to distribute this template, but please keep the
 % referal to HowToTeX.com.
 % Date: July 2011
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% How to use writeLaTeX: 
+% How to use writeLaTeX:
 %
 % You edit the source code here on the left, and the preview on the
 % right shows you the result within a few seconds.
@@ -23,7 +23,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
-							
+
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[protrusion=true,expansion=true]{microtype}
@@ -54,7 +54,7 @@
 \newcommand{\MyName}[1]{ % Name
 		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
 		\par \normalsize \normalfont}
-		
+
 \newcommand{\MySlogan}[1]{ % Slogan (optional)
 		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
 		\par \normalsize \normalfont}
@@ -71,19 +71,18 @@
 		\noindent\hangindent=2em\hangafter=0 % Indentation
 		\parbox{\spacebox}{        % Box to align text
 		\textit{#1}}			   % Entry name (birth, address, etc.)
-		\hspace{10.5em} #2 \par}    % Entry value	
-		
+		\hspace{10.5em} #2 \par}    % Entry value
+
 \newcommand{\EducationEntry}[4]{
 		\noindent \textbf{#1} \hfill      % Study
 		\colorbox{Black}{%
 			\parbox{6em}{%
 			\hfill\color{White}#2}} \par  % Duration
 		\noindent \textit{#3} \par        % School
-		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
 		\normalsize \par}
 
 \newcommand{\ProjectsEntry}[2]{
-		\noindent \textbf{#1} \hfill \par 
+		\noindent \textbf{#1} \hfill \par
 		\noindent\hangindent=2em\hangafter=0 \small #2 % Description
 		\normalsize \par
 		}
@@ -104,7 +103,7 @@
 %		\includegraphics[width=0.15\textwidth]{photo}
 %\end{wrapfigure}
 
-\MyName{Nikitin Sergey}
+\MyName{Serhii Nikitin}
 
 \sepspace
 
@@ -115,7 +114,7 @@
 \PersonalEntry{Birth}{October 20, 1998}
 \PersonalEntry{Address}{12 Polkovnika Potjekhina St, Kyiv}
 \PersonalEntry{Phone}{+380939122277}
-\PersonalEntry{Mail}{\url{nikitinsergey@ex.ua}}
+\PersonalEntry{Mail}{\url{nikitincrime@protonmail.com}}
 \PersonalEntry{Github}{\url{github.com/nikitinator}}
 
 %%% Education
@@ -124,36 +123,25 @@
 
 \EducationEntry{Software Engineer}{2017 - 2020}{UNIT Factory}
 \sepspace
-
 \EducationEntry{Associate
 Software developer}{2013 - 2017}{College of Information Technology and Land Management}
 
 %%% Work experience
 %%% ------------------------------------------------------------
 \NewPart{Work experience}{}
-\EducationEntry{Intern DevOps/Infrastructure Engineer}{May 2019 - August 2019}{Lotusflare, Full-time}{Developing CI/ CD pipelines with Jenkins and Ansible, orchestration with Kubernetes, and other cloud stuff.}
-
-
-%%% Projects
-%%% ------------------------------------------------------------
-\NewPart{Projects}{}
-\ProjectsEntry{Ray Tracer }{An app to render computer-generated images using ray tracing technique.}
-\ProjectsEntry{Wolf3d}{An app that displays a dynamic view inside a maze using ray casting technique.}
-\ProjectsEntry{Fractol}{A multi-threaded app where user can explore Mandelbrot set, Julia
-set and a lot of other fractals.}
-\ProjectsEntry{FdF}{An app that creates a simplified 3D graphic “wireframe”
-representation of a relief landscape linking various points via segments.}
-
+\WorkEntry{Fullstack Game Developer}{March 2020 - February 2021}{Often Games, Full-time}{Implemented new game features, dev tools, A/B user segmentation system.}
+\sepspace
+\WorkEntry{Intern DevOps/Infrastructure Engineer}{May 2019 - August 2019}{Lotusflare, Full-time}{Developed CI/ CD pipelines with Jenkins and Ansible, orchestration with Kubernetes, and other cloud stuff.}
 
 %%% Skills
 %%% ------------------------------------------------------------
 \NewPart{Skills}{}
 
-\SkillsEntry{Languages}{Russian (mother tongue)}
-\SkillsEntry{}{English (fluent)}
+\SkillsEntry{Languages}{Russian, English, Ukrainian}
 \sepspace
-\SkillsEntry{Progamming languages}{C, Python}
-
-
+\SkillsEntry{Progamming languages}{Nim, C, Python}
+\sepspace
+\SkillsEntry{Tools}{Git, MongoDB, Android, Firebase}
+\sepspace
 
 \end{document}
